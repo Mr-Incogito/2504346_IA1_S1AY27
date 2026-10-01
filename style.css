@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #1f3a5f;
+    --secondary-color: #e8eef5;
+    --accent-color: #d49a2a;
+    --text-color: #222222;
+    --background-color: #f7f9fc;
+    --white-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+main section p {
+    max-width: 900px;
+}
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    min-height: 450px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text p {
+    max-width: 650px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--primary-color);
+}
+
+.student-id {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: var(--secondary-color);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.student-id img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.student-id img:hover {
+    opacity: 0.85;
+}
+
+.career-goals {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: var(--white-color);
+    border-left: 5px solid var(--accent-color);
+}
+
+article {
+    background-color: var(--white-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+article h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+blockquote {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-left: 5px solid var(--accent-color);
+    font-style: italic;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 25px;
+        min-height: auto;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .student-id,
+    .career-goals,
+    article {
+        padding: 20px;
+    }
+
+    .student-id img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
